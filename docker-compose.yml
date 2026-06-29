@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  bst-frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    container_name: bst-simulator
+    ports:
+      - "8085:80"
+    networks:
+      - application_proxy
+    restart: unless-stopped
+
+networks:
+  application_proxy:
+    external: true
