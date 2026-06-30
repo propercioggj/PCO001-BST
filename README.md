@@ -113,4 +113,4 @@ docker compose up -d --build
 ```
 
 Após a inicialização do container, abra o navegador em:
-👉 http://localhost:8085
+👉 http://localhost:8080
